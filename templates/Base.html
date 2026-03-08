@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+<title>{% block title %}Alliance Football club U10-U11{% endblock %}</title>
+
+    <!--style de "font"-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--acces icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS perso -->
+    <link rel="stylesheet" href="{{ url_for('static', filename ='Custom_Para.css') }}">
+</head>
+
+<body>
+
+    <header id="tool_bar">
+        <img class="logoFFF" src="{{ url_for('static', filename='images/logoFFF.png') }}" alt="logoFFF">
+        <img class="Logo_Alliance" src="{{ url_for('static', filename='images/Logo_Alliance.png') }}" alt="Logo_Alliance">
+        <div class="titles">
+            <h1>Bienvenue sur Football Alliance 77</h1>
+            <h2>Site dédié à nos U10/U11</h2>
+        </div>
+    </header>
+
+        <nav id="menu">
+    <a href="{{ url_for('accueil') }}"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="{{ url_for('Résultats') }}"> <i class="fa-solid fa-futbol"></i> Matchs/Calendrier U10 </a>
+    <a href="{{ url_for('Résultats_U11') }}"> <i class="fa-solid fa-futbol"></i> Matchs/Calendrier U11 </a>
+</nav>
+
+<main style="margin-top: 50px;">
+
+{% block content %}{% endblock %}
+
+</main>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{% extends "Base.html" %}
+
+{% block content %}
+<h1>FOOTBALL</h1>
+
+    <div class="intro">
+L’équipe des coachs U10/U11 est ravie de vous accueillir sur cet espace dédié, créé pour partager encore davantage autour de notre passion commune : <strong>le football.</strong><br>
+Ce sport fait vibrer nos enfants, les rassemble, et leur offre dès le plus jeune âge une aventure humaine riche, faite d’émotions, d’efforts, de progrès et de souvenirs qui les accompagneront longtemps.<br>
+
+<strong>Un immense merci à vous, les parents, pour votre présence indéfectible.</strong><br>
+Qu’il fasse froid, qu’il pleuve, que les réveils soient difficiles ou que les déplacements soient longs, vous êtes toujours là pour les encourager, les soutenir et vivre avec eux ces moments uniques.<br>
+Votre engagement est une part essentielle de leur épanouissement et de la vie du groupe.<br>
+
+À travers ce site, nous souhaitons renforcer ce lien, partager nos valeurs, nos projets, nos réussites et continuer à faire grandir ensemble cette belle aventure sportive et humaine.
+    </div>
+
+<div class="Photo-intro">
+    <div class="PhotoA">
+        <img src="{{ url_for('static', filename='images/Photo4.jpg') }}" alt="Photo4">
+    </div>
+
+    <div class="PhotoA">
+        <img src="{{ url_for('static', filename='images/Tournoi_foot.jpg') }}" alt="Tournoi_foot">
+    </div>
+</div>
+
+<div class="ligne-bloc">
+
+    <div class="bloc1">
+    A 9–10 ans, nos jeunes joueurs entrent dans une étape clé de leur progression.<br>
+    Ils commencent à comprendre que le football ne se résume pas à courir derrière un ballon, mais qu’il repose avant tout sur le collectif.<br>
+    C’est à cet âge que l’on peut poser les <strong>bases tactiques essentielles :</strong>
+    <ul>
+        <li>jouer ensemble</li>
+        <li>se rendre disponibles</li>
+        <li>se replacer</li>
+        <li>aider un partenaire</li>
+        <li>respecter un rôle</li>
+        </ul>
+    Bien sûr, cela demande de la répétition, de la patience et un cadre simple, ludique et rassurant.
+    Les enfants apprennent en faisant, en rejouant, en expérimentant.<br>
+    Notre objectif est de développer leur <strong>intelligence de jeu :</strong>
+    savoir regarder, comprendre une situation et agir rapidement, comprendre une situation et agir rapidement.
+    La discipline que nous recherchons n’a rien de militaire.<br>
+    Elle se traduit par des comportements simples :
+    <ul>
+        <li>rester concentré</li>
+        <li>écouter</li>
+        <li>répéter</li>
+        <li>un effort</li>
+        <li>se replacer naturellement</li>
+        <li>respecter les consignes et les autres.</li>
+    </ul>
+    Ce sont ces habitudes qui feront d’eux des joueurs responsables et des coéquipiers fiables.<br>
+    En tant qu’éducateurs, notre rôle est d’insister sur les fondamentaux, de répéter les gammes, de corriger avec bienveillance et d’encourager chaque progrès.<br>
+    Nous accompagnons leur apprentissage avec exigence, mais toujours dans le plaisir, car c’est ainsi qu’ils grandissent, qu’ils s’épanouissent et qu’ils prennent goût au jeu collectif.<br>
+    </div>
+
+    <div class="P10">
+        <img src="{{ url_for('static', filename='images/P10.jpg') }}" alt="P10">
+    </div>
+
+</div>
+
+    <div class="Photo-part2">
+
+        <div class="photo7">
+            <img src="{{ url_for('static', filename='images/Photo7.jpg') }}" alt="Photo7">
+        </div>
+
+        <div class="photo2">
+            <img src="{{ url_for('static', filename='images/Photo2.jpg') }}" alt="Photo2">
+        </div>
+    </div>
+
+<div class="video-container">
+
+<iframe width="560" height="315"
+        src="https://www.youtube.com/embed/CWImwX3PPxY?rel=0"
+        title="Ma vidéo Coach Maud"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+</iframe>
+
+    </iframe>
+</div>
+
+{% endblock %}

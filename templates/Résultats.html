@@ -1,0 +1,105 @@
+{% extends "Base.html" %}
+
+{% block content %}
+<h1>Championnat U10</h1>
+
+    <div class="Championnat Criterium">
+        <div class="matches-row">
+        {% for m in matches %}
+            <div class="match-frame">
+             <div class="match-header">
+                <i class="fa-solid fa-calendar-days"></i>
+                    <span class="match-date">{{ m.date }}</span>
+
+                {% if m.status == "postponed" %}
+                <span class="badge postponed">Reporté</span>
+                {% elif m.status == "scheduled" %}
+                <span class="badge scheduled">À venir</span>
+                {% endif %}
+
+
+        </div>
+        <div class="match-body">
+            <div class="team">
+                <span class="team-name">{{ m.team1 }}</span>
+                <span class="team-score">{{ m.score1 }}</span>
+            </div>
+            <div class="team">
+            <span class="team-name">{{ m.team2 }}</span>
+                <span class="team-score">{{ m.score2 }}</span> </div>
+        </div>
+    </div>
+
+    {% endfor %}
+        </div>
+</div>
+
+<table class="classement-table">
+    <tr>
+        <th>Équipe</th>
+        <th>Pts</th>
+        <th>J</th>
+        <th>V</th>
+        <th>N</th>
+        <th>D</th>
+        <th>BM</th>
+        <th>BE</th>
+        <th>DB</th>
+    </tr>
+
+    {% for team, data in standings %}
+    <tr>
+        <td>{{ team }}</td>
+        <td>{{ data.points }}</td>
+        <td>{{ data.played }}</td>
+        <td>{{ data.wins }}</td>
+        <td>{{ data.draws }}</td>
+        <td>{{ data.losses }}</td>
+        <td>{{ data.goals_for }}</td>
+        <td>{{ data.goals_against }}</td>
+        <td>{{ data.goal_diff }}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+<table class="signification">
+    <tr>
+        <th>V</th>
+        <th>Victoire</th>
+    </tr>
+
+    <tr>
+        <th>J</th>
+        <th>Joué</th>
+    </tr>
+
+    <tr>
+        <th>N</th>
+        <th>Nul</th>
+    </tr>
+
+    <tr>
+        <th>D</th>
+        <th>Défaite</th>
+    </tr>
+
+    <tr>
+        <th>BM</th>
+        <th>But Marqué</th>
+    </tr>
+
+    <tr>
+        <th>BE</th>
+        <th>But Encaissé</th>
+    </tr>
+
+    <tr>
+        <th>DB</th>
+        <th>Différence de but</th>
+    </tr>
+
+
+</table>
+
+{% endblock %}

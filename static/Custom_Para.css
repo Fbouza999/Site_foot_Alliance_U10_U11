@@ -1,0 +1,298 @@
+body {
+    background: #003566;      /*jaune sunshine*/
+    margin: 0; padding: 0;/*J'enlève les marges par défaut ajouter par les navigateurs*/
+    color : #F5F9FF;
+    font-family: 'Poppins', sans-serif;
+}
+
+#tool_bar {                 /*en css on appelle un id par # */
+    text-align : center;
+    width : 100%;
+    background : #F4C430;       /*Jaune profond (style doré)*/
+    z-index: 1000;              /*Permet de passer par dessus*/
+    border : 5px solid blue;
+    position: fixed;            /*Permet de scroller et de conserver la tool_bar*/
+    display : flex;             /* création d'un conteneur flex*/
+    align-items : center;       /* aligne verticalement dans un conteneur flex*/
+    justify-content: center;     /*justify-content contrôle le mode flex*/
+    top: 0;
+}
+
+.titles {
+ text-align : center;
+ color : blue;
+}
+
+.titles h1 { margin: 10px 0; }
+.titles h2 { margin: 10px 0; }
+
+.bloc1 {
+    padding : 0 10px;
+}
+
+.logoFFF {
+width: 60px;
+right: 20px;
+position: absolute;
+}
+
+.Logo_Alliance {
+width: 80px;
+max-width : 100%;
+left : 10px;
+position: absolute;
+}
+
+
+#menu {
+    background: #0033cc;
+    padding: 10px;
+    text-align: center;
+    margin-top: 120px; /* à ajuster selon la hauteur du header */
+    border-bottom: 4px solid #001a66; /* Ligne premium */
+
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+#menu a:hover { text-decoration: underline;
+color: #FFE066; /* Jaune Alliance */ transform: translateY(-3px); /* Effet premium */
+}
+
+#menu a i { margin-right: 8px; }
+
+.intro {
+padding-left : 100px;
+width : 1000px;
+max-width : 100%;
+line-height: 1.6;
+text-align : center;
+}
+
+.Photo-intro { display: flex;
+gap: 30px; /* espace entre les photos */
+justify-content: center;
+/* centrer l’ensemble */
+align-items: center; }
+
+.PhotoA {
+    width: 500px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.PhotoA img {
+    width: 100%;
+    height: 400px;     /* même hauteur pour toutes */
+    object-fit: cover; /* recadrage propre */
+    display: block;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+}
+
+
+h1 {text-align : center;
+}
+
+.ligne-bloc { display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 40px;
+padding: 20px 30px;
+
+.bloc1 {
+padding-top : 20px;
+padding-left : 30px;
+width : 700px;
+max-width : 100%;
+line-height: 1.6;
+}
+
+.P10 img {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top : 170px;
+    width :300px;
+    height: 400px;
+}
+
+
+
+.bloc1 li {
+color : gold;
+}
+
+
+}
+/*Trame pour les matchs*/
+
+.matches-row {
+display: flex;
+gap: 20px;/* espace entre les cartes */
+justify-content: center;
+flex-wrap: wrap;/* permet le retour à la ligne sur mobile */
+}
+
+.match-frame {
+    background: #0B1E3F;              /* bleu nuit premium */
+    border-radius: 16px;
+    padding: 22px;
+    border: 1px solid #ffffff20;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #F5F9FF;                   /* blanc lumineux */
+    width : 300px;
+}
+
+.match-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 18px;
+}
+
+.match-header i {
+    color: #1E90FF;                   /* bleu accent */
+    font-size: 16px;
+}
+
+.match-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #112A46;              /* bleu profond */
+    padding: 14px 18px;
+    border-radius: 12px;
+}
+
+.team-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.team-score {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1E90FF;                   /* bleu sportif */
+}
+
+
+
+
+.classement-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+    color: #F5F9FF;
+}
+
+.classement-table th, .classement-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ffffff20;
+    text-align: center;
+}
+
+.classement-table th {
+    background: #112A46;
+    font-weight: 600;
+}
+
+.classement-table tr:nth-child(even) {
+    background: #0B1E3F;
+}
+.badge {
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.badge.postponed {
+    background: #ff9800;
+    color: white;
+}
+
+.badge.scheduled {
+    background: #2196f3;
+    color: white;
+}
+
+/*Tableau des signification*/
+
+.signification {
+Margin-top : -300px;
+}
+
+
+.signification th {
+text-align :center;
+padding: 0px 10px;
+border: 1px solid #ffffff; /* les traits du tableau */
+/*border-bottom: 1px solid #ffffff; /*traits horizontaux*/
+/*border-right: 1px solid #ffffff; /*traits verticaux*/
+font-weight: normal;
+font-size :0.9rem;
+}
+
+.Photo-part2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.photo7 img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+.photo2 img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    padding-bottom: 56.25%; /* ratio 16:9 */
+    margin: 0 auto; /* centre horizontalement */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border : 2px solid blue;
+
+}

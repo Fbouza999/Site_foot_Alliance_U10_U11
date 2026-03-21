@@ -321,13 +321,25 @@ gap: 20px;
 text-decoration : underline;
 }
 
-.P14MARS img{
+.P14MARS img {
 width: 500px;
 height: 400px;
 object-fit: cover;
 border-radius: 10px;
 border: 3px solid #ffffff;
 }
+
+@media (max-width: 768px) {
+    .Samedi_14_Mars_2026 {
+        flex-direction: column; /* passe en vertical */
+        text-align: center;     /* centre le texte */
+    }
+
+    .P14MARS img {
+        max-width: 100%;        /* l’image prend toute la largeur */
+    }
+}
+
 
 
 }

@@ -72,7 +72,7 @@ padding-right : 100px;
 width : 1000px;
 max-width : 100%;
 line-height: 1.6;
-text-align : center;
+text-align : left;
 }
 
 .Photo-intro { display: flex;
@@ -113,17 +113,6 @@ width : 700px;
 max-width : 100%;
 line-height: 1.6;
 }
-
-.P10 img {
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(2px);
-    padding: 20px;
-    border-radius: 12px;
-    margin-top : 170px;
-    width :300px;
-    height: 400px;
-}
-
 
 
 .bloc1 li {
@@ -308,8 +297,6 @@ text-align : center;
 }
 
 
-
-
 .Samedi_14_Mars_2026 {
 display : flex;
 justify-content: space-between;
@@ -329,17 +316,52 @@ border-radius: 10px;
 border: 3px solid #ffffff;
 }
 
-@media (max-width: 768px) {
-    .Samedi_14_Mars_2026 {
-        flex-direction: column; /* passe en vertical */
-        text-align: center;     /* centre le texte */
-    }
 
-    .P14MARS img {
-        max-width: 100%;        /* l’image prend toute la largeur */
-    }
+.Samedi_21_Mars_2026 {
+display : flex;
+justify-content: space-between;
+gap : 30px;
+padding : 10px;
 }
 
+.texte_21_Mars {
+    flex: 1; /* prend l’espace disponible */
+    max-width: 60%; /* évite qu’il prenne toute la largeur */
+}
 
+.Foot_bombom img {
+width: 500px;
+height: 300px;
+object-fit: cover;
+border-radius: 10px;
+border: 3px solid #ffffff;
+}
 
+.texte_28_Mars {
+padding-left : 15px;
+Padding-right : 80px;
+}
+
+.last_28 {
+display : flex;
+/*justify-content: space-between;*/
+gap : 60px;
+padding : 20px;
+
+}
+
+.Guignes img {
+width: 500px;
+height: 300px;
+object-fit: cover;
+border-radius: 10px;
+border: 3px solid #ffffff;
+}
+
+.classement img {
+width: 500px;
+height: 300px;
+object-fit: cover;
+border-radius: 10px;
+border: 3px solid #ffffff;
 }

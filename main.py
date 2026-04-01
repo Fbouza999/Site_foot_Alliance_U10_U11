@@ -42,12 +42,12 @@ matches_U10 = [
     {"date": "samedi 14 Mars 2026", "team1": "CHATELET EN BRIE US 21", "score1": 1, "team2": "ALLIANCE 77 21","score2": 7, "status": "played"},
     {"date": "samedi 14 Mars 2026", "team1": "BOMBONNAISE AS 21", "score1": 7, "team2": "NANGIS ES 21","score2": 0, "status": "played"},
     {"date": "samedi 14 Mars 2026", "team1": "FC GUIGNES 21", "score1": 13, "team2": "LESIGNY U.S.C. 21","score2": 1, "status": "played"},
-    {"date": "samedi 21 Mars 2026", "team1": "NANGIS ES 21", "score1": None, "team2": "FC GUIGNES 21","score2": None, "status": "scheduled"},
-    {"date": "samedi 21 Mars 2026", "team1": "CHATELET EN BRIE US 21", "score1": None, "team2": "LESIGNY U.S.C. 21","score2": None, "status": "scheduled"},
-    {"date": "samedi 21 Mars 2026", "team1": "ALLIANCE 77 21", "score1": None, "team2": "BOMBONNAISE AS 21","score2": None, "status": "scheduled"},
+    {"date": "samedi 21 Mars 2026", "team1": "NANGIS ES 21", "score1": 4, "team2": "FC GUIGNES 21","score2": 3, "status": "played"},
+    {"date": "samedi 21 Mars 2026", "team1": "CHATELET EN BRIE US 21", "score1": 4, "team2": "LESIGNY U.S.C. 21","score2": 2, "status": "played"},
+    {"date": "samedi 21 Mars 2026", "team1": "ALLIANCE 77 21", "score1": 2, "team2": "BOMBONNAISE AS 21","score2": 1, "status": "played"},
     {"date": "samedi 28 Mars 2026", "team1": "LESIGNY U.S.C. 21", "score1": None, "team2": "NANGIS ES 21","score2": None, "status": "scheduled"},
-    {"date": "samedi 28 Mars 2026", "team1": "FC GUIGNES 21", "score1": None, "team2": "ALLIANCE 77 21","score2": None, "status": "scheduled"},
-    {"date": "samedi 28 Mars 2026", "team1": "BOMBONNAISE AS 21", "score1": None, "team2": "CHATELET EN BRIE US 21","score2": None, "status": "scheduled"},
+    {"date": "samedi 28 Mars 2026", "team1": "FC GUIGNES 21", "score1": 2, "team2": "ALLIANCE 77 21","score2": 4, "status": "played"},
+    {"date": "samedi 28 Mars 2026", "team1": "BOMBONNAISE AS 21", "score1": 3, "team2": "CHATELET EN BRIE US 21","score2": 2, "status": "played"},
 
 ]
 
@@ -93,13 +93,13 @@ matches_U11 = [
 {"date": "samedi 14 Mars 2026", "team1": "MARLES AC 2", "score1":0, "team2": "COMBS LA VILLE C.A 2", "score2":11, "status": "played"},
 {"date": "samedi 14 Mars 2026", "team1": "ALLIANCE 77", "score1":1, "team2": "SERVON FC 2", "score2":3, "status": "played"},
 
-{"date": "samedi 21 Mars 2026", "team1": "COMBS LA VILLE C.A 2", "score1":None, "team2": "CHEVRY COSSIGNY FC 2", "score2":None, "status": "scheduled"},
-{"date": "samedi 21 Mars 2026", "team1": "ALLIANCE 77", "score1":None, "team2": "PRESLES EN BRIE RC 2", "score2":None, "status": "scheduled"},
-{"date": "samedi 21 Mars 2026", "team1": "MARLES AC 2", "score1":None, "team2": "SERVON FC 2", "score2":None, "status": "scheduled"},
+{"date": "samedi 21 Mars 2026", "team1": "COMBS LA VILLE C.A 2", "score1":13, "team2": "CHEVRY COSSIGNY FC 2", "score2":2, "status": "played"},
+{"date": "samedi 21 Mars 2026", "team1": "ALLIANCE 77", "score1":1, "team2": "PRESLES EN BRIE RC 2", "score2":11, "status": "played"},
+{"date": "samedi 21 Mars 2026", "team1": "MARLES AC 2", "score1":0, "team2": "SERVON FC 2", "score2":3, "status": "played"},
 
-{"date": "samedi 28 Mars 2026", "team1": "SERVON FC 2", "score1":None, "team2": "PRESLES EN BRIE RC 2", "score2":None, "status": "scheduled"},
-{"date": "samedi 28 Mars 2026", "team1": "MARLES AC 2", "score1":None, "team2": "CHEVRY COSSIGNY FC 2", "score2":None, "status": "scheduled"},
-{"date": "samedi 28 Mars 2026", "team1": "ALLIANCE 77", "score1":None, "team2": "COMBS LA VILLE C.A 2", "score2":None, "status": "scheduled"},
+{"date": "samedi 28 Mars 2026", "team1": "SERVON FC 2", "score1":1, "team2": "PRESLES EN BRIE RC 2", "score2":4, "status": "played"},
+{"date": "samedi 28 Mars 2026", "team1": "MARLES AC 2", "score1":2, "team2": "CHEVRY COSSIGNY FC 2", "score2":9, "status": "played"},
+{"date": "samedi 28 Mars 2026", "team1": "ALLIANCE 77", "score1":1, "team2": "COMBS LA VILLE C.A 2", "score2":17, "status": "played"},
 
 {"date": "samedi 04 Mars 2026", "team1": "PRESLES EN BRIE RC 2", "score1":None, "team2": "ALLIANCE 77", "score2":None, "status": "scheduled"},
 
